@@ -1,4 +1,3 @@
-const buble = require('rollup-plugin-buble');
 const babel = require('rollup-plugin-babel');
 const uglify = require('rollup-plugin-uglify');
 const commonjs = require('rollup-plugin-commonjs');
@@ -36,9 +35,9 @@ module.exports = [{
   plugins: [
     commonjs(),
     resolve(),
-    babel({
-      runtimeHelpers: true,
-    }),
-    uglify()
+    // babel({
+    //   runtimeHelpers: true,
+    // }),
+    // uglify()
   ]
 }];

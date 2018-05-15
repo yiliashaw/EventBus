@@ -1,3 +1,4 @@
+const findIndex = require('./utils/find-index');
 module.exports = class EventBus {
   constructor() {
     this.listeners = Object.create(null);
@@ -72,7 +73,7 @@ module.exports = class EventBus {
           return;
         }
 
-        const index = callbacks.findIndex((val, index, arr) => val === cb);
+        const index = findIndex(callbacks, (val, index, arr) => val === cb);
 
         if (index === -1) {
           return;

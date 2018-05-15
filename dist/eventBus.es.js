@@ -1,1 +1,127 @@
-function unwrapExports(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}function createCommonjsModule(e,t){return e(t={exports:{}},t.exports),t.exports}var _global=createCommonjsModule(function(e){var t=e.exports="undefined"!=typeof window&&window.Math==Math?window:"undefined"!=typeof self&&self.Math==Math?self:Function("return this")();"number"==typeof __g&&(__g=t)}),_core=createCommonjsModule(function(e){var t=e.exports={version:"2.5.6"};"number"==typeof __e&&(__e=t)}),_core_1=_core.version,_aFunction=function(e){if("function"!=typeof e)throw TypeError(e+" is not a function!");return e},_ctx=function(e,t,r){if(_aFunction(e),void 0===t)return e;switch(r){case 1:return function(r){return e.call(t,r)};case 2:return function(r,o){return e.call(t,r,o)};case 3:return function(r,o,n){return e.call(t,r,o,n)}}return function(){return e.apply(t,arguments)}},_fails=function(e){try{return!!e()}catch(e){return!0}},_descriptors=!_fails(function(){return 7!=Object.defineProperty({},"a",{get:function(){return 7}}).a});_export(_export.S+_export.F*!_descriptors,"Object",{defineProperty:_objectDp.f});var $Object=_core.Object,defineProperty=function(e,t,r){return $Object.defineProperty(e,t,r)},defineProperty$1=createCommonjsModule(function(e){e.exports={default:defineProperty,__esModule:!0}}),_Object$defineProperty=unwrapExports(defineProperty$1),ceil=Math.ceil,floor=Math.floor,_toInteger=function(e){return isNaN(e=+e)?0:(e>0?floor:ceil)(e)},_defined=function(e){if(void 0==e)throw TypeError("Can't call method on  "+e);return e},_stringAt=function(e){return function(t,r){var o,n,i=String(_defined(t)),s=_toInteger(r),c=i.length;return s<0||s>=c?e?"":void 0:(o=i.charCodeAt(s))<55296||o>56319||s+1===c||(n=i.charCodeAt(s+1))<56320||n>57343?e?i.charAt(s):o:e?i.slice(s,s+2):n-56320+(o-55296<<10)+65536}},_library=!0,_redefine=_hide;_export(_export.S+_export.F*!_descriptors,"Object",{defineProperties:_objectDps});var $Object$1=_core.Object,defineProperties=function(e,t){return $Object$1.defineProperties(e,t)},defineProperties$1=createCommonjsModule(function(e){e.exports={default:defineProperties,__esModule:!0}}),_Object$defineProperties=unwrapExports(defineProperties$1),_toObject=function(e){return Object(_defined(e))},_objectSap=function(e,t){var r=(_core.Object||{})[e]||Object[e],o={};o[e]=t(r),_export(_export.S+_export.F*_fails(function(){r(1)}),"Object",o)};_objectSap("keys",function(){return function(e){return _objectKeys(_toObject(e))}});var keys=_core.Object.keys,keys$1=createCommonjsModule(function(e){e.exports={default:keys,__esModule:!0}}),_Object$keys=unwrapExports(keys$1),hasOwnProperty={}.hasOwnProperty,_has=function(e,t){return hasOwnProperty.call(e,t)},toString={}.toString,_cof=function(e){return toString.call(e).slice(8,-1)},_iobject=Object("z").propertyIsEnumerable(0)?Object:function(e){return"String"==_cof(e)?e.split(""):Object(e)},_toIobject=function(e){return _iobject(_defined(e))},min=Math.min,_toLength=function(e){return e>0?min(_toInteger(e),9007199254740991):0},max=Math.max,min$1=Math.min,_toAbsoluteIndex=function(e,t){return(e=_toInteger(e))<0?max(e+t,0):min$1(e,t)},_arrayIncludes=function(e){return function(t,r,o){var n,i=_toIobject(t),s=_toLength(i.length),c=_toAbsoluteIndex(o,s);if(e&&r!=r){for(;s>c;)if((n=i[c++])!=n)return!0}else for(;s>c;c++)if((e||c in i)&&i[c]===r)return e||c||0;return!e&&-1}},_shared=createCommonjsModule(function(e){var t=_global["__core-js_shared__"]||(_global["__core-js_shared__"]={});(e.exports=function(e,r){return t[e]||(t[e]=void 0!==r?r:{})})("versions",[]).push({version:_core.version,mode:_library?"pure":"global",copyright:"© 2018 Denis Pushkarev (zloirock.ru)"})}),id=0,px=Math.random(),_uid=function(e){return"Symbol(".concat(void 0===e?"":e,")_",(++id+px).toString(36))},shared=_shared("keys"),_sharedKey=function(e){return shared[e]||(shared[e]=_uid(e))},arrayIndexOf=_arrayIncludes(!1),IE_PROTO=_sharedKey("IE_PROTO"),_objectKeysInternal=function(e,t){var r,o=_toIobject(e),n=0,i=[];for(r in o)r!=IE_PROTO&&_has(o,r)&&i.push(r);for(;t.length>n;)_has(o,r=t[n++])&&(~arrayIndexOf(i,r)||i.push(r));return i},_enumBugKeys="constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf".split(","),_objectKeys=_Object$keys||function(e){return _objectKeysInternal(e,_enumBugKeys)},_objectDps=_descriptors?_Object$defineProperties:function(e,t){_anObject(e);for(var r,o=_objectKeys(t),n=o.length,i=0;n>i;)_objectDp.f(e,r=o[i++],t[r]);return e},document=_global.document,is=_isObject(document)&&_isObject(document.createElement),_domCreate=function(e){return is?document.createElement(e):{}},document$1=_global.document,_html=document$1&&document$1.documentElement,IE_PROTO$1=_sharedKey("IE_PROTO"),Empty=function(){},PROTOTYPE="prototype",_createDict=function(){var e,t=_domCreate("iframe"),r=_enumBugKeys.length;for(t.style.display="none",_html.appendChild(t),t.src="javascript:",(e=t.contentWindow.document).open(),e.write("<script>document.F=Object<\/script>"),e.close(),_createDict=e.F;r--;)delete _createDict[PROTOTYPE][_enumBugKeys[r]];return _createDict()},_objectCreate=_Object$create||function(e,t){var r;return null!==e?(Empty[PROTOTYPE]=_anObject(e),r=new Empty,Empty[PROTOTYPE]=null,r[IE_PROTO$1]=e):r=_createDict(),void 0===t?r:_objectDps(r,t)},_propertyDesc=function(e,t){return{enumerable:!(1&e),configurable:!(2&e),writable:!(4&e),value:t}},_wks=createCommonjsModule(function(e){var t=_shared("wks"),r=_global.Symbol,o="function"==typeof r;(e.exports=function(e){return t[e]||(t[e]=o&&r[e]||(o?r:_uid)("Symbol."+e))}).store=t}),def=_objectDp.f,TAG=_wks("toStringTag"),_setToStringTag=function(e,t,r){e&&!_has(e=r?e:e.prototype,TAG)&&def(e,TAG,{configurable:!0,value:t})},IteratorPrototype={};_hide(IteratorPrototype,_wks("iterator"),function(){return this});var _iterCreate=function(e,t,r){e.prototype=_objectCreate(IteratorPrototype,{next:_propertyDesc(1,r)}),_setToStringTag(e,t+" Iterator")};_objectSap("getPrototypeOf",function(){return function(e){return _objectGpo(_toObject(e))}});var getPrototypeOf=_core.Object.getPrototypeOf,getPrototypeOf$1=createCommonjsModule(function(e){e.exports={default:getPrototypeOf,__esModule:!0}}),_Object$getPrototypeOf=unwrapExports(getPrototypeOf$1),IE_PROTO$2=_sharedKey("IE_PROTO"),ObjectProto=Object.prototype,_objectGpo=_Object$getPrototypeOf||function(e){return e=_toObject(e),_has(e,IE_PROTO$2)?e[IE_PROTO$2]:"function"==typeof e.constructor&&e instanceof e.constructor?e.constructor.prototype:e instanceof Object?ObjectProto:null},ITERATOR=_wks("iterator"),BUGGY=!([].keys&&"next"in[].keys()),FF_ITERATOR="@@iterator",KEYS="keys",VALUES="values",returnThis=function(){return this},_iterDefine=function(e,t,r,o,n,i,s){_iterCreate(r,t,o);var c,a,u,_=function(e){if(!BUGGY&&e in y)return y[e];switch(e){case KEYS:case VALUES:return function(){return new r(this,e)}}return function(){return new r(this,e)}},f=t+" Iterator",l=n==VALUES,p=!1,y=e.prototype,b=y[ITERATOR]||y[FF_ITERATOR]||n&&y[n],d=b||_(n),O=n?l?_("entries"):d:void 0,m="Array"==t&&y.entries||b;if(m&&(u=_objectGpo(m.call(new e)))!==Object.prototype&&u.next&&(_setToStringTag(u,f,!0),_library||"function"==typeof u[ITERATOR]||_hide(u,ITERATOR,returnThis)),l&&b&&b.name!==VALUES&&(p=!0,d=function(){return b.call(this)}),_library&&!s||!BUGGY&&!p&&y[ITERATOR]||_hide(y,ITERATOR,d),n)if(c={values:l?d:_(VALUES),keys:i?d:_(KEYS),entries:O},s)for(a in c)a in y||_redefine(y,a,c[a]);else _export(_export.P+_export.F*(BUGGY||p),t,c);return c},$at=_stringAt(!0);_iterDefine(String,"String",function(e){this._t=String(e),this._i=0},function(){var e,t=this._t,r=this._i;return r>=t.length?{value:void 0,done:!0}:(e=$at(t,r),this._i+=e.length,{value:e,done:!1})});for(var _iterStep=function(e,t){return{value:t,done:!!e}},es6_array_iterator=_iterDefine(Array,"Array",function(e,t){this._t=_toIobject(e),this._i=0,this._k=t},function(){var e=this._t,t=this._k,r=this._i++;return!e||r>=e.length?(this._t=void 0,_iterStep(1)):_iterStep(0,"keys"==t?r:"values"==t?e[r]:[r,e[r]])},"values"),TO_STRING_TAG=_wks("toStringTag"),DOMIterables="CSSRuleList,CSSStyleDeclaration,CSSValueList,ClientRectList,DOMRectList,DOMStringList,DOMTokenList,DataTransferItemList,FileList,HTMLAllCollection,HTMLCollection,HTMLFormElement,HTMLSelectElement,MediaList,MimeTypeArray,NamedNodeMap,NodeList,PaintRequestList,Plugin,PluginArray,SVGLengthList,SVGNumberList,SVGPathSegList,SVGPointList,SVGStringList,SVGTransformList,SourceBufferList,StyleSheetList,TextTrackCueList,TextTrackList,TouchList".split(","),i=0;i<DOMIterables.length;i++){var NAME=DOMIterables[i],Collection=_global[NAME],proto=Collection&&Collection.prototype;proto&&!proto[TO_STRING_TAG]&&_hide(proto,TO_STRING_TAG,NAME)}var f=_wks,_wksExt={f:f},iterator=_wksExt.f("iterator"),iterator$1=createCommonjsModule(function(e){e.exports={default:iterator,__esModule:!0}});unwrapExports(iterator$1);var meta=_meta.onFreeze;_objectSap("preventExtensions",function(e){return function(t){return e&&_isObject(t)?e(meta(t)):t}});var preventExtensions=_core.Object.preventExtensions,preventExtensions$1=createCommonjsModule(function(e){e.exports={default:preventExtensions,__esModule:!0}}),_Object$preventExtensions=unwrapExports(preventExtensions$1);_objectSap("isExtensible",function(e){return function(t){return!!_isObject(t)&&(!e||e(t))}});var isExtensible=_core.Object.isExtensible,isExtensible$1=createCommonjsModule(function(e){e.exports={default:isExtensible,__esModule:!0}}),_Object$isExtensible=unwrapExports(isExtensible$1),_meta=createCommonjsModule(function(e){var t=_uid("meta"),r=_objectDp.f,o=0,n=_Object$isExtensible||function(){return!0},i=!_fails(function(){return n(_Object$preventExtensions({}))}),s=function(e){r(e,t,{value:{i:"O"+ ++o,w:{}}})},c=e.exports={KEY:t,NEED:!1,fastKey:function(e,r){if(!_isObject(e))return"symbol"==(void 0===e?"undefined":_typeof(e))?e:("string"==typeof e?"S":"P")+e;if(!_has(e,t)){if(!n(e))return"F";if(!r)return"E";s(e)}return e[t].i},getWeak:function(e,r){if(!_has(e,t)){if(!n(e))return!0;if(!r)return!1;s(e)}return e[t].w},onFreeze:function(e){return i&&c.NEED&&n(e)&&!_has(e,t)&&s(e),e}}}),_meta_1=_meta.KEY,_meta_2=_meta.NEED,_meta_3=_meta.fastKey,_meta_4=_meta.getWeak,_meta_5=_meta.onFreeze,defineProperty$2=_objectDp.f,_wksDefine=function(e){var t=_core.Symbol||(_core.Symbol=_library?{}:_global.Symbol||{});"_"==e.charAt(0)||e in t||defineProperty$2(t,e,{value:_wksExt.f(e)})},getOwnPropertySymbols=_core.Object.getOwnPropertySymbols,getOwnPropertySymbols$1=createCommonjsModule(function(e){e.exports={default:getOwnPropertySymbols,__esModule:!0}}),_Object$getOwnPropertySymbols=unwrapExports(getOwnPropertySymbols$1),f$1=_Object$getOwnPropertySymbols,_objectGops={f:f$1},f$2={}.propertyIsEnumerable,_objectPie={f:f$2},_enumKeys=function(e){var t=_objectKeys(e),r=_objectGops.f;if(r)for(var o,n=r(e),i=_objectPie.f,s=0;n.length>s;)i.call(e,o=n[s++])&&t.push(o);return t},_isArray=Array.isArray||function(e){return"Array"==_cof(e)},_toPrimitive=function(e,t){if(!_isObject(e))return e;var r,o;if(t&&"function"==typeof(r=e.toString)&&!_isObject(o=r.call(e)))return o;if("function"==typeof(r=e.valueOf)&&!_isObject(o=r.call(e)))return o;if(!t&&"function"==typeof(r=e.toString)&&!_isObject(o=r.call(e)))return o;throw TypeError("Can't convert object to primitive value")};_objectSap("getOwnPropertyNames",function(){return _objectGopnExt.f});var $Object$2=_core.Object,getOwnPropertyNames=function(e){return $Object$2.getOwnPropertyNames(e)},getOwnPropertyNames$1=createCommonjsModule(function(e){e.exports={default:getOwnPropertyNames,__esModule:!0}}),_Object$getOwnPropertyNames=unwrapExports(getOwnPropertyNames$1),hiddenKeys=_enumBugKeys.concat("length","prototype"),f$3=_Object$getOwnPropertyNames||function(e){return _objectKeysInternal(e,hiddenKeys)},_objectGopn={f:f$3},gOPN=_objectGopn.f,toString$1={}.toString,windowNames="object"==("undefined"==typeof window?"undefined":_typeof(window))&&window&&_Object$getOwnPropertyNames?_Object$getOwnPropertyNames(window):[],getWindowNames=function(e){try{return gOPN(e)}catch(e){return windowNames.slice()}},f$4=function(e){return windowNames&&"[object Window]"==toString$1.call(e)?getWindowNames(e):gOPN(_toIobject(e))},_objectGopnExt={f:f$4},$getOwnPropertyDescriptor=_objectGopd.f;_objectSap("getOwnPropertyDescriptor",function(){return function(e,t){return $getOwnPropertyDescriptor(_toIobject(e),t)}});var $Object$3=_core.Object,getOwnPropertyDescriptor=function(e,t){return $Object$3.getOwnPropertyDescriptor(e,t)},getOwnPropertyDescriptor$1=createCommonjsModule(function(e){e.exports={default:getOwnPropertyDescriptor,__esModule:!0}}),_Object$getOwnPropertyDescriptor=unwrapExports(getOwnPropertyDescriptor$1),_ie8DomDefine=!_descriptors&&!_fails(function(){return 7!=Object.defineProperty(_domCreate("div"),"a",{get:function(){return 7}}).a}),gOPD=_Object$getOwnPropertyDescriptor,f$5=_descriptors?gOPD:function(e,t){if(e=_toIobject(e),t=_toPrimitive(t,!0),_ie8DomDefine)try{return gOPD(e,t)}catch(e){}if(_has(e,t))return _propertyDesc(!_objectPie.f.call(e,t),e[t])},_objectGopd={f:f$5},META=_meta.KEY,gOPD$1=_objectGopd.f,dP=_objectDp.f,gOPN$1=_objectGopnExt.f,$Symbol=_global.Symbol,$JSON=_global.JSON,_stringify=$JSON&&$JSON.stringify,PROTOTYPE$1="prototype",HIDDEN=_wks("_hidden"),TO_PRIMITIVE=_wks("toPrimitive"),isEnum={}.propertyIsEnumerable,SymbolRegistry=_shared("symbol-registry"),AllSymbols=_shared("symbols"),OPSymbols=_shared("op-symbols"),ObjectProto$1=Object[PROTOTYPE$1],USE_NATIVE="function"==typeof $Symbol,QObject=_global.QObject,setter=!QObject||!QObject[PROTOTYPE$1]||!QObject[PROTOTYPE$1].findChild,setSymbolDesc=_descriptors&&_fails(function(){return 7!=_objectCreate(dP({},"a",{get:function(){return dP(this,"a",{value:7}).a}})).a})?function(e,t,r){var o=gOPD$1(ObjectProto$1,t);o&&delete ObjectProto$1[t],dP(e,t,r),o&&e!==ObjectProto$1&&dP(ObjectProto$1,t,o)}:dP,wrap=function(e){var t=AllSymbols[e]=_objectCreate($Symbol[PROTOTYPE$1]);return t._k=e,t},isSymbol=USE_NATIVE&&"symbol"==_typeof($Symbol.iterator)?function(e){return"symbol"==(void 0===e?"undefined":_typeof(e))}:function(e){return e instanceof $Symbol},$defineProperty=function(e,t,r){return e===ObjectProto$1&&$defineProperty(OPSymbols,t,r),_anObject(e),t=_toPrimitive(t,!0),_anObject(r),_has(AllSymbols,t)?(r.enumerable?(_has(e,HIDDEN)&&e[HIDDEN][t]&&(e[HIDDEN][t]=!1),r=_objectCreate(r,{enumerable:_propertyDesc(0,!1)})):(_has(e,HIDDEN)||dP(e,HIDDEN,_propertyDesc(1,{})),e[HIDDEN][t]=!0),setSymbolDesc(e,t,r)):dP(e,t,r)},$defineProperties=function(e,t){_anObject(e);for(var r,o=_enumKeys(t=_toIobject(t)),n=0,i=o.length;i>n;)$defineProperty(e,r=o[n++],t[r]);return e},$create=function(e,t){return void 0===t?_objectCreate(e):$defineProperties(_objectCreate(e),t)},$propertyIsEnumerable=function(e){var t=isEnum.call(this,e=_toPrimitive(e,!0));return!(this===ObjectProto$1&&_has(AllSymbols,e)&&!_has(OPSymbols,e))&&(!(t||!_has(this,e)||!_has(AllSymbols,e)||_has(this,HIDDEN)&&this[HIDDEN][e])||t)},$getOwnPropertyDescriptor$1=function(e,t){if(e=_toIobject(e),t=_toPrimitive(t,!0),e!==ObjectProto$1||!_has(AllSymbols,t)||_has(OPSymbols,t)){var r=gOPD$1(e,t);return!r||!_has(AllSymbols,t)||_has(e,HIDDEN)&&e[HIDDEN][t]||(r.enumerable=!0),r}},$getOwnPropertyNames=function(e){for(var t,r=gOPN$1(_toIobject(e)),o=[],n=0;r.length>n;)_has(AllSymbols,t=r[n++])||t==HIDDEN||t==META||o.push(t);return o},$getOwnPropertySymbols=function(e){for(var t,r=e===ObjectProto$1,o=gOPN$1(r?OPSymbols:_toIobject(e)),n=[],i=0;o.length>i;)!_has(AllSymbols,t=o[i++])||r&&!_has(ObjectProto$1,t)||n.push(AllSymbols[t]);return n};USE_NATIVE||(_redefine(($Symbol=function(){if(this instanceof $Symbol)throw TypeError("Symbol is not a constructor!");var e=_uid(arguments.length>0?arguments[0]:void 0);return _descriptors&&setter&&setSymbolDesc(ObjectProto$1,e,{configurable:!0,set:function t(r){this===ObjectProto$1&&t.call(OPSymbols,r),_has(this,HIDDEN)&&_has(this[HIDDEN],e)&&(this[HIDDEN][e]=!1),setSymbolDesc(this,e,_propertyDesc(1,r))}}),wrap(e)})[PROTOTYPE$1],"toString",function(){return this._k}),_objectGopd.f=$getOwnPropertyDescriptor$1,_objectDp.f=$defineProperty,_objectGopn.f=_objectGopnExt.f=$getOwnPropertyNames,_objectPie.f=$propertyIsEnumerable,_objectGops.f=$getOwnPropertySymbols,_descriptors&&!_library&&_redefine(ObjectProto$1,"propertyIsEnumerable",$propertyIsEnumerable,!0),_wksExt.f=function(e){return wrap(_wks(e))}),_export(_export.G+_export.W+_export.F*!USE_NATIVE,{Symbol:$Symbol});for(var es6Symbols="hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables".split(","),j=0;es6Symbols.length>j;)_wks(es6Symbols[j++]);for(var wellKnownSymbols=_objectKeys(_wks.store),k=0;wellKnownSymbols.length>k;)_wksDefine(wellKnownSymbols[k++]);_export(_export.S+_export.F*!USE_NATIVE,"Symbol",{for:function(e){return _has(SymbolRegistry,e+="")?SymbolRegistry[e]:SymbolRegistry[e]=$Symbol(e)},keyFor:function(e){if(!isSymbol(e))throw TypeError(e+" is not a symbol!");for(var t in SymbolRegistry)if(SymbolRegistry[t]===e)return t},useSetter:function(){setter=!0},useSimple:function(){setter=!1}}),_export(_export.S+_export.F*!USE_NATIVE,"Object",{create:$create,defineProperty:$defineProperty,defineProperties:$defineProperties,getOwnPropertyDescriptor:$getOwnPropertyDescriptor$1,getOwnPropertyNames:$getOwnPropertyNames,getOwnPropertySymbols:$getOwnPropertySymbols}),$JSON&&_export(_export.S+_export.F*(!USE_NATIVE||_fails(function(){var e=$Symbol();return"[null]"!=_stringify([e])||"{}"!=_stringify({a:e})||"{}"!=_stringify(Object(e))})),"JSON",{stringify:function(e){for(var t,r,o=[e],n=1;arguments.length>n;)o.push(arguments[n++]);if(r=t=o[1],(_isObject(t)||void 0!==e)&&!isSymbol(e))return _isArray(t)||(t=function(e,t){if("function"==typeof r&&(t=r.call(this,e,t)),!isSymbol(t))return t}),o[1]=t,_stringify.apply($JSON,o)}}),$Symbol[PROTOTYPE$1][TO_PRIMITIVE]||_hide($Symbol[PROTOTYPE$1],TO_PRIMITIVE,$Symbol[PROTOTYPE$1].valueOf),_setToStringTag($Symbol,"Symbol"),_setToStringTag(Math,"Math",!0),_setToStringTag(_global.JSON,"JSON",!0),_wksDefine("asyncIterator"),_wksDefine("observable");var symbol=_core.Symbol,symbol$1=createCommonjsModule(function(e){e.exports={default:symbol,__esModule:!0}});unwrapExports(symbol$1);var _typeof_1$$1=createCommonjsModule(function(e,t){t.__esModule=!0;var r=i(iterator$1),o=i(symbol$1),n="function"==typeof o.default&&"symbol"===_typeof(r.default)?function(e){return void 0===e?"undefined":_typeof(e)}:function(e){return e&&"function"==typeof o.default&&e.constructor===o.default&&e!==o.default.prototype?"symbol":void 0===e?"undefined":_typeof(e)};function i(e){return e&&e.__esModule?e:{default:e}}t.default="function"==typeof o.default&&"symbol"===n(r.default)?function(e){return void 0===e?"undefined":n(e)}:function(e){return e&&"function"==typeof o.default&&e.constructor===o.default&&e!==o.default.prototype?"symbol":void 0===e?"undefined":n(e)}}),_typeof=unwrapExports(_typeof_1$$1),_isObject=function(e){return"object"===(void 0===e?"undefined":_typeof(e))?null!==e:"function"==typeof e},_anObject=function(e){if(!_isObject(e))throw TypeError(e+" is not an object!");return e},dP$1=_Object$defineProperty,f$6=_descriptors?_Object$defineProperty:function(e,t,r){if(_anObject(e),t=_toPrimitive(t,!0),_anObject(r),_ie8DomDefine)try{return dP$1(e,t,r)}catch(e){}if("get"in r||"set"in r)throw TypeError("Accessors not supported!");return"value"in r&&(e[t]=r.value),e},_objectDp={f:f$6},_hide=_descriptors?function(e,t,r){return _objectDp.f(e,t,_propertyDesc(1,r))}:function(e,t,r){return e[t]=r,e},PROTOTYPE$2="prototype",$export=function e(t,r,o){var n,i,s,c=t&e.F,a=t&e.G,u=t&e.S,_=t&e.P,f=t&e.B,l=t&e.W,p=a?_core:_core[r]||(_core[r]={}),y=p[PROTOTYPE$2],b=a?_global:u?_global[r]:(_global[r]||{})[PROTOTYPE$2];for(n in a&&(o=r),o)(i=!c&&b&&void 0!==b[n])&&_has(p,n)||(s=i?b[n]:o[n],p[n]=a&&"function"!=typeof b[n]?o[n]:f&&i?_ctx(s,_global):l&&b[n]==s?function(e){var t=function(t,r,o){if(this instanceof e){switch(arguments.length){case 0:return new e;case 1:return new e(t);case 2:return new e(t,r)}return new e(t,r,o)}return e.apply(this,arguments)};return t[PROTOTYPE$2]=e[PROTOTYPE$2],t}(s):_&&"function"==typeof s?_ctx(Function.call,s):s,_&&((p.virtual||(p.virtual={}))[n]=s,t&e.R&&y&&!y[n]&&_hide(y,n,s)))};$export.F=1,$export.G=2,$export.S=4,$export.P=8,$export.B=16,$export.W=32,$export.U=64,$export.R=128;var _export=$export;_export(_export.S,"Object",{create:_objectCreate});var $Object$4=_core.Object,create=function(e,t){return $Object$4.create(e,t)},create$1=createCommonjsModule(function(e){e.exports={default:create,__esModule:!0}}),_Object$create=unwrapExports(create$1),classCallCheck=createCommonjsModule(function(e,t){t.__esModule=!0,t.default=function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}}),_classCallCheck=unwrapExports(classCallCheck),createClass=createCommonjsModule(function(e,t){t.__esModule=!0;var r,o=(r=defineProperty$1)&&r.__esModule?r:{default:r};t.default=function(){function e(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),(0,o.default)(e,n.key,n)}}return function(t,r,o){return r&&e(t.prototype,r),o&&e(t,o),t}}()}),_createClass=unwrapExports(createClass),src=function(){function e(){_classCallCheck(this,e),this.listeners=_Object$create(null)}return _createClass(e,[{key:"on",value:function(e,t){var r=this;if(!("string"==typeof e||Array.isArray(e)))throw new TypeError("event is expected to be string or array");if(Array.isArray(e))e.forEach(function(e){r.on(e,t)});else if(/\s+/.test(e.trim()))e.split(/\s+/).forEach(function(e){r.on(e,t)});else{this.listeners[e]?this.listeners[e].push(t):this.listeners[e]=[t]}}},{key:"once",value:function(e,t){var r=this,o=arguments,n=function(){r.off(e,t),t.apply(r,o)};n.fn=t,this.$on(e,n)}},{key:"off",value:function(e,t){var r=this;if(!("string"==typeof e||Array.isArray(e)))throw new TypeError("event is expected to be string or array");if(Array.isArray(e))e.forEach(function(e){r.off(e,t)});else if(/\s+/.test(e.trim()))e.split(/\s+/).forEach(function(e){r.off(e,t)});else{var o=this.listeners[e];if(!o)return void console.error("No subscribers for event "+envent);var n=o.findIndex(function(e,t,r){return e===cb});if(-1===n)return;if(o.splice(n,1),0===o.length)return void(this.listeners[e]=null);this.listeners[e]=o}}},{key:"trigger",value:function(e){for(var t=arguments.length,r=Array(t>1?t-1:0),o=1;o<t;o++)r[o-1]=arguments[o];var n=this.listeners[e];n?n.forEach(function(e){return e.apply(void 0,r)}):console.error("No subscribers for event "+e)}}]),e}();export default src;
+var findIndex = (array, fn) => {
+  if (Array.prototype.findIndex === 'function') {
+    return array.findIndex(fn);
+  }
+
+  const len = array.length;
+
+  for (let i = 0; i < len; i++) {
+    const item = array[i];
+    if (fn(item, i)) {
+      return i;
+    }
+  }
+
+  return -1;
+};
+
+var src = class EventBus {
+  constructor() {
+    this.listeners = Object.create(null);
+  }
+
+  /**
+   *
+   * @param {string | Array<string>} event
+   * @param {Function} fn
+   */
+  on(event, fn) {
+    const eventTypeValid = typeof event === 'string' || Array.isArray(event);
+    if (eventTypeValid) {
+
+      if (Array.isArray(event)) {
+        event.forEach(ev => {
+          this.on(ev, fn);
+        });
+      } else if (/\s+/.test(event.trim())) {
+        event.split(/\s+/).forEach(ev => {
+          this.on(ev, fn);
+        });
+      } else {
+        const callbacks = this.listeners[event];
+
+        if (!callbacks) {
+          this.listeners[event] = [fn];
+        } else {
+          this.listeners[event].push(fn);
+        }
+
+      }
+    } else {
+      throw new TypeError('event is expected to be string or array')
+    }
+
+  }
+
+  /**
+   *
+   *
+   * @param {string} event
+   * @param {Function} fn
+   */
+  once(event, fn) {
+    const on = () => {
+      this.off(event, fn);
+      fn.apply(this, arguments);
+    };
+    on.fn = fn;
+    this.$on(event, on);
+  }
+
+
+  off(event, fn) {
+    const eventTypeValid = typeof event === 'string' || Array.isArray(event);
+    if (eventTypeValid) {
+
+      if (Array.isArray(event)) {
+        event.forEach(ev => {
+          this.off(ev, fn);
+        });
+      } else if (/\s+/.test(event.trim())) {
+        event.split(/\s+/).forEach(ev => {
+          this.off(ev, fn);
+        });
+      } else {
+        const callbacks = this.listeners[event];
+
+        if (!callbacks) {
+          console.error(`No subscribers for event ${envent}`);
+          return;
+        }
+
+        const index = findIndex(callbacks, (val, index, arr) => val === cb);
+
+        if (index === -1) {
+          return;
+        }
+
+        callbacks.splice(index, 1);
+
+        if (callbacks.length === 0) {
+          this.listeners[event] = null;
+          return;
+        }
+
+        this.listeners[event] = callbacks;
+      }
+
+
+    } else {
+      throw new TypeError('event is expected to be string or array')
+    }
+
+  }
+
+  trigger(event, ...args) {
+    const callbacks = this.listeners[event];
+
+    if (!callbacks) {
+      console.error(`No subscribers for event ${event}`);
+      return;
+    }
+
+    callbacks.forEach(cb => cb(...args));
+  }
+};
+
+export default src;
